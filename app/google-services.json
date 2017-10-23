@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "311754698531",
+    "firebase_url": "https://shironamhin-14c71.firebaseio.com",
+    "project_id": "shironamhin-14c71",
+    "storage_bucket": "shironamhin-14c71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311754698531:android:88127a32473233d5",
+        "android_client_info": {
+          "package_name": "net.shironamhin.shironamhin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311754698531-k5or65iq09n0cg8lbg0ada9qjilcf240.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.shironamhin.shironamhin",
+            "certificate_hash": "528c85f4283b699f1f736f2a6e47d529bceba4d9"
+          }
+        },
+        {
+          "client_id": "311754698531-a0m3sm3vtt1re7m0k7hcoahl70mcvlmv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFyyHpY17ElHDdWPYEH1nqGBYSmcQvTpM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311754698531-a0m3sm3vtt1re7m0k7hcoahl70mcvlmv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

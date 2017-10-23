@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/mini">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/hasimukh_video" />
+
+        <TextView
+            android:id="@+id/vname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:text="ABAR HASHIMUSH"
+            android:layout_marginTop="13dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/albumName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vname"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:gravity="start"
+            android:text="SHIRONAMHIN"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/channelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/albumName"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:gravity="start"
+            android:text="SHIRONAHIN TV"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/views"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/channelName"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/icon"
+            android:gravity="start"
+            android:text="1.7k views"
+            android:visibility="invisible"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/youtubeIcon"
+            android:layout_width="58px"
+            android:layout_height="50px"
+            android:src="@drawable/youtube"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+    </RelativeLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#b6b6b6"></View>
+
+</RelativeLayout>

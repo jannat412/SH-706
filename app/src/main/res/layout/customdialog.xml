@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textColor="@color/text_color"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:padding="20dp"
+        android:id="@+id/create_itedm"
+        android:layout_height="wrap_content"
+        android:text="CREATE PLAYLIST"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customdialogedittext"
+        android:padding="20dp"
+        android:textColor="@color/text_color"
+        android:id="@+id/playlist_edit"
+        android:textColorHint="@android:color/white"
+        android:hint="Type Playlist Name"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/background_color"
+        android:text="Add"
+        android:textColor="@color/text_color"
+        android:id="@+id/button_add_xml"
+        />
+
+
+</LinearLayout>

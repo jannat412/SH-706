@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Shironamhin</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="title_activity_online">OnlineActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_mini_player">MiniPlayer</string>
+    <string name="title_activity_online_play_list">OnlinePlayList</string>
+    <string name="row_id">rowID</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="video_button">Video Record Button</string>
+    <string name="camera_button">Camera Capture Button</string>
+    <string name="icche_ghuri">শিরোনামঃ ইচ্ছে ঘুড়ি \n
+কথা ও সুরঃ জিয়া  \n
+এই হাওয়ায় ওড়াও তুমি, তোমার যত ইচ্ছে ঘুড়ি \n
+চুপি চুপি মেঘের মেলা, তোমার আকাশ করছে চুরি \n
+সূর্য বসাও আকাশের নীল, ইচ্ছের রঙ গোলাপী হলে \n
+দিগন্ত রেখায় সূর্য নামে, ব্যস্ত সময় যাচ্ছে চলে। \n
+হঠাৎ খেয়ালী এ ঝড়ো হাওয়ায়, \n
+উড়ছে তোমার ইচ্ছে ঘুড়ি \n
+ওড়াও ওড়াও সুতোর টানে, \n
+আকাশের নীল যাচ্ছে চুরি। \n
+শুভ্র সেই মেঘের ভীড়ে, তোমার সব ইচ্ছে ওড়ে। \n
+আকাশ খেয়ালী মনে, হারায় কিছুই না জেনে। \n
+তোমার সুতোয় বাঁধা আকাশ, \n
+ঝড়ো হাওয়ায় রঙ হারালে \n
+নির্বাক। ইচ্ছে। আচমকা। দিশেহারা…… \n
+এই আলোয় হাঁটছো একা, সঙ্গী কর আমায় তুমি। \n
+বেয়াড়া যত মেঘের ছায়া, করছে চুরি স্বপ্নভূমি \n
+নীলের আকাশ গোলাপী হলে, ইচ্ছে ঘুড়ি যাচ্ছে চলে \n
+সূতোর বাঁধা ছাড়িয়ে আকাশ, অন্য ভূবন দেখবে বলে। \n
+হঠাৎ খেয়ালী এ ঝড়ো হাওয়ায়, \n
+ভাঙছে তোমার মেঘলা রেখা \n
+ওড়াও ওড়াও সুতোর টানে, \n
+আকাশ আবার হবে যে দেখা ।\n
+</string>
+    <string name="title_activity_karaokey_new">KaraokeyNewActivity</string>
+</resources>
