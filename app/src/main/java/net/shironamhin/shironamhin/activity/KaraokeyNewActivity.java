@@ -300,6 +300,7 @@ public class KaraokeyNewActivity extends AppCompatActivity
     private File mImageFolder;
     private String mImageFileName;
     private Uri u;
+    private ImageView coverImage;
 
     private static SparseIntArray ORIENTATIONS = new SparseIntArray();
     static {
@@ -371,6 +372,7 @@ public class KaraokeyNewActivity extends AppCompatActivity
         navigation();
 
         seekBar=(SeekBar)findViewById(R.id.seekbar);
+        coverImage = (ImageView) findViewById(R.id.imageView);
         currentDurationOfsong = (TextView) findViewById(R.id.currentdurationOfsong);
         durationOfsong = (TextView) findViewById(R.id.durationOfsong);
         mtext = (TextView) findViewById(R.id.mediatext);
@@ -426,8 +428,10 @@ public class KaraokeyNewActivity extends AppCompatActivity
                             position = (position) % songlists.size();
                             final ImageView imageView = (ImageView) view.findViewById(R.id.playIcon);
                             final ImageView imageViewPause = (ImageView) view.findViewById(R.id.playPause);
-                            imageplay = songlists.get(position).getPlayimage();
-                            Picasso.with(KaraokeyNewActivity.this).load(imageplay.toString()).networkPolicy(NetworkPolicy.OFFLINE).into(imageView, new Callback() {
+                            imageView.setImageResource(R.drawable.song_running);
+
+                            final int finalPosition = position;
+                            Picasso.with(KaraokeyNewActivity.this).load(songlists.get(finalPosition).getPlayimage()).networkPolicy(NetworkPolicy.OFFLINE).into(coverImage, new Callback() {
                                 @Override
                                 public void onSuccess() {
 
@@ -435,9 +439,10 @@ public class KaraokeyNewActivity extends AppCompatActivity
 
                                 @Override
                                 public void onError() {
-                                    Picasso.with(KaraokeyNewActivity.this).load(imageplay.toString()).into(imageView);
+                                    Picasso.with(KaraokeyNewActivity.this).load(songlists.get(finalPosition).getPlayimage()).into(coverImage);
                                 }
                             });
+
                             currentlyrics = songlists.get(position).getLyrics();
                             karaokey = songlists.get(position).getKaraokey();
 

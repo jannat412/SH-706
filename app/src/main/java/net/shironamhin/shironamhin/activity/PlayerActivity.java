@@ -44,7 +44,6 @@ import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import net.shironamhin.shironamhin.R;
-import net.shironamhin.shironamhin.VerticalMarqueeTextView;
 import net.shironamhin.shironamhin.adapter.CustomAdapter;
 import net.shironamhin.shironamhin.adapter.DialogAdapter;
 import net.shironamhin.shironamhin.database.DatabaseHelper;
@@ -99,6 +98,9 @@ public class PlayerActivity extends AppCompatActivity
     private AudioManager audioManager;
     private DatabaseHelper databaseHelper;
     private FirebaseHelper firebaseHelper;
+
+    private ImageView imageView;
+
     private TextView mtext;
     private boolean boolMusicPlaying = false;
     private boolean isOnline;
@@ -149,9 +151,13 @@ public class PlayerActivity extends AppCompatActivity
                     Toast.LENGTH_LONG).show();
         }
         databaseHelper = new DatabaseHelper(PlayerActivity.this);
+
         Bundle bundle = getIntent().getExtras();
         internetOn = bundle.getBoolean("internetOn");
         post_key = bundle.getString("post_key");
+
+        imageView = (ImageView) findViewById(R.id.imageView);
+
 
         mDatabase = FirebaseDatabase.getInstance().getReference().child("SongPlay");
         query = mDatabase.orderByChild("post_key").equalTo(post_key);
@@ -351,7 +357,19 @@ public class PlayerActivity extends AppCompatActivity
                         playAudio();
                         boolMusicPlaying = true;
                         seekBar.setOnSeekBarChangeListener(PlayerActivity.this);
-                        // mBoundService.playFromlist();
+
+                        final int finalPosition = position;
+                        Picasso.with(PlayerActivity.this).load(songlists.get(finalPosition).getPlayimage()).networkPolicy(NetworkPolicy.OFFLINE).into(imageView, new Callback() {
+                            @Override
+                            public void onSuccess() {
+
+                            }
+
+                            @Override
+                            public void onError() {
+                                Picasso.with(PlayerActivity.this).load(songlists.get(finalPosition).getPlayimage()).into(imageView);
+                            }
+                        });
                     }
                 }
             });
